@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Post Detail</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div class="container">
+  <h1 th:text="${post.title}"></h1>
+  <p th:text="${post.content}"></p>
+  <a class="button" href="/posts">Back to List</a>
+</div>
+</body>
+</html>

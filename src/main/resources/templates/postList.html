@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Post List</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div class="container">
+  <h1>Post List</h1>
+  <table>
+    <tr>
+      <th>Title</th>
+      <th>Actions</th>
+    </tr>
+    <tr th:each="post : ${posts}">
+      <td th:text="${post.title}"></td>
+      <td>
+        <a class="button" th:href="@{/posts/{id}(id=${post.id})}">View</a>
+        <a class="button" th:href="@{/posts/edit/{id}(id=${post.id})}">Edit</a>
+        <form th:action="@{/posts/delete/{id}(id=${post.id})}" method="post" style="display:inline;">
+          <button type="submit" class="button delete-button">Delete</button>
+        </form>
+      </td>
+    </tr>
+  </table>
+  <a class="button" href="/posts/add">Add New Post</a>
+</div>
+</body>
+</html>

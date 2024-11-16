@@ -1,0 +1,138 @@
+/* Global Styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eef2f3;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #34495e;
+  text-align: center;
+  margin: 1rem 0;
+  display: block;
+}
+
+/* Container */
+.container {
+  max-width: 60rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+header {
+  background: #2980b9;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  margin: 1rem 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+/* Button Styles */
+.button {
+  display: inline-block;
+  background: #2980b9;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s;
+  margin: 0.5rem 0;
+}
+
+.button:hover {
+  background: #1abc9c;
+}
+
+/* Specific Styles for Delete Button */
+.delete-button {
+  background: #e74c3c;
+}
+
+.delete-button:hover {
+  background: #c0392b;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background: #f4f4f4;
+}
+
+/* Form Styles */
+.form-container {
+  background: #fff;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 10rem;
+}
+
+/* Error Styles */
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+}
