@@ -5,7 +5,6 @@
 - [Overview](#overview)
 - [Features](#features)
 - [Usage](#usage)
-- [Contributions](#contributions)
 - [License](#license)
 
 ## Overview
@@ -33,8 +32,6 @@ This project is a Spring MVC web application designed to demonstrate basic CRUD 
     - Use the edit option to update existing posts.
     - Delete posts to manage your blog content.
 
-## Contributions
-Contributions, feedback, and suggestions are welcome. If you have any improvements or find issues, please submit a pull request or open an issue.
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
